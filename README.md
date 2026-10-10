@@ -1,7 +1,9 @@
 # rahulshettyacademy.com – Playwright + JavaScript Framework
 
 ```
-config/        env + budgets          pages/      Page Objects
+config/
+env + budgets
+pages/      Page Objects
 fixtures/      custom test fixtures   utils/      pure helpers (unit-tested)
 tests/
   smoke/ sanity/ ui/ links/ edge/ performance/ security/
