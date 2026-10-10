@@ -1,0 +1,28 @@
+{
+  "name": "rahulshettyacademy-playwright-framework",
+  "version": "1.0.0",
+  "description": "Playwright + JavaScript test framework for rahulshettyacademy.com",
+  "private": true,
+  "scripts": {
+    "install:browsers": "playwright install --with-deps chromium",
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/smoke",
+    "test:sanity": "playwright test tests/sanity",
+    "test:ui": "playwright test tests/ui",
+    "test:links": "playwright test tests/links",
+    "test:edge": "playwright test tests/edge",
+    "test:performance": "playwright test tests/performance",
+    "test:security": "playwright test tests/security",
+    "test:unit": "playwright test --project=unit",
+    "test:integration": "playwright test tests/integration",
+    "test:e2e": "playwright test tests/e2e",
+    "test:auth": "playwright test tests/auth",
+    "test:all": "node scripts/run-all.js",
+    "report": "playwright show-report reports/html",
+    "push:github": "bash scripts/push-to-github.sh"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "dotenv": "^16.4.5"
+  }
+}

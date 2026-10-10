@@ -1,0 +1,86 @@
+<testsuites id="" name="" tests="20" failures="0" skipped="20" errors="0" time="0.086029">
+<testsuite name="auth/login.spec.js" timestamp="2026-10-09T08:46:16.131Z" hostname="chromium" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="@login practice login page › valid credentials log in" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login practice login page › wrong password shows error" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login practice login page › wrong username shows error" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login practice login page › terms checkbox must be checked" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login practice login page › role dropdown offers multiple options" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login practice login page › password field input is masked" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login client app login › empty form shows validation and does not submit" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login client app login › invalid email format is flagged" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login client app login › unknown user is rejected" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@login client app login › link to registration works" classname="auth/login.spec.js">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth/registration.spec.js" timestamp="2026-10-09T08:46:16.131Z" hostname="chromium" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="@registration client app registration › form shows all required fields" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › submitting an empty form shows validation and no API call" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › mismatched passwords are rejected" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › invalid email format is rejected" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › short phone number is rejected" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › weak password is rejected" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › age/terms checkbox is required" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › special characters / unicode in names do not crash the form" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › valid registration succeeds and the new user can log in (end-to-end)" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@registration client app registration › registering the same email twice is rejected" classname="auth/registration.spec.js">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

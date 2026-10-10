@@ -1,0 +1,628 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/home/claude/rsa-playwright-framework/node_modules/.bin/playwright",
+      "test",
+      "tests/auth",
+      "--project=chromium",
+      "--list"
+    ],
+    "configFile": "/home/claude/rsa-playwright-framework/playwright.config.js",
+    "rootDir": "/home/claude/rsa-playwright-framework/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/claude/rsa-playwright-framework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "unit",
+        "name": "unit",
+        "testDir": "/home/claude/rsa-playwright-framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/unit\\/.*\\.spec\\.js/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/claude/rsa-playwright-framework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/claude/rsa-playwright-framework/tests",
+        "testIgnore": [
+          "/tests\\/unit\\/.*/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/claude/rsa-playwright-framework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "name": "chromium",
+        "testDir": "/home/claude/rsa-playwright-framework/tests",
+        "snapshotDir": "/home/claude/rsa-playwright-framework/tests",
+        "testIgnore": {},
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://rahulshettyacademy.com",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure",
+          "actionTimeout": 15000,
+          "navigationTimeout": 30000,
+          "ignoreHTTPSErrors": false,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth/login.spec.js",
+      "file": "auth/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@login practice login page",
+          "file": "auth/login.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "valid credentials log in",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-de004f80595eb3f6f266",
+              "file": "auth/login.spec.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "wrong password shows error",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-fda428f7bb757634a9c4",
+              "file": "auth/login.spec.js",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "wrong username shows error",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-21f3391fd90851fe91ef",
+              "file": "auth/login.spec.js",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "terms checkbox must be checked",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-e9530cb8361aa7fc660e",
+              "file": "auth/login.spec.js",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "role dropdown offers multiple options",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-6d533fd4c02e6b3ec34a",
+              "file": "auth/login.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "password field input is masked",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-21e274878ec65774bdd4",
+              "file": "auth/login.spec.js",
+              "line": 36,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "@login client app login",
+          "file": "auth/login.spec.js",
+          "line": 43,
+          "column": 6,
+          "specs": [
+            {
+              "title": "empty form shows validation and does not submit",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-cbf5ad7753aad70bcc66",
+              "file": "auth/login.spec.js",
+              "line": 44,
+              "column": 3
+            },
+            {
+              "title": "invalid email format is flagged",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-c875527a5444b8f5b05c",
+              "file": "auth/login.spec.js",
+              "line": 53,
+              "column": 3
+            },
+            {
+              "title": "unknown user is rejected",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-a855e3b7dd935eddeb2d",
+              "file": "auth/login.spec.js",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "link to registration works",
+              "ok": true,
+              "tags": [
+                "login"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-8a1e4e0bf6945f0d6c4b",
+              "file": "auth/login.spec.js",
+              "line": 68,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "auth/registration.spec.js",
+      "file": "auth/registration.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@registration client app registration",
+          "file": "auth/registration.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "form shows all required fields",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-aadc3aa1ca7016b69db8",
+              "file": "auth/registration.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "submitting an empty form shows validation and no API call",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-8ebd172451018f92fec4",
+              "file": "auth/registration.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "mismatched passwords are rejected",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-bc793588ff2f04e93662",
+              "file": "auth/registration.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "invalid email format is rejected",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-d0a12dc5274bad4f83b9",
+              "file": "auth/registration.spec.js",
+              "line": 35,
+              "column": 3
+            },
+            {
+              "title": "short phone number is rejected",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-0b822de0a02666c93272",
+              "file": "auth/registration.spec.js",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "weak password is rejected",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-1b4e0ebe03401184da01",
+              "file": "auth/registration.spec.js",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "age/terms checkbox is required",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-cd4011834713fe010027",
+              "file": "auth/registration.spec.js",
+              "line": 53,
+              "column": 3
+            },
+            {
+              "title": "special characters / unicode in names do not crash the form",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-fae680dadb003bfcf74d",
+              "file": "auth/registration.spec.js",
+              "line": 62,
+              "column": 3
+            },
+            {
+              "title": "valid registration succeeds and the new user can log in (end-to-end)",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-e2ff786a4c515dd61142",
+              "file": "auth/registration.spec.js",
+              "line": 69,
+              "column": 3
+            },
+            {
+              "title": "registering the same email twice is rejected",
+              "ok": true,
+              "tags": [
+                "registration"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "98a9cdd5dd5fe240b070-b29eb31a39579448c1c0",
+              "file": "auth/registration.spec.js",
+              "line": 82,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T08:46:16.046Z",
+    "duration": 86.029,
+    "expected": 0,
+    "skipped": 20,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
